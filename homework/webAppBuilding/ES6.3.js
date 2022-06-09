@@ -1,31 +1,27 @@
 class main {
-    constructor (name,describe,cal){
+    constructor (name,describe){
         this.name = name,
         this.describe = describe
-        this.cal = number*3 || 1
     }
-    static sth (a){
-        return a*3
+    static cal (a){
+        return a*3 
     }
     set setName (name){
         this.name = name
     }
 }
 
-class figure extends student{
-    constructor (length, describe, cal)
+class figure extends main{
+    constructor (length, name, describe)
     {
+        super(name,describe)
         this.length = length
-        super(describe,cal)
-}}
+    }
+    get getInfo(){
+        console.log("length: "+this.length+"; describe: "+this.describe)
+    }
+}
 
 
-let student2 = new student("CongMinh","19",5)
-let student3 = new student("MinhHuynh","19")
-// student.setName("CongMinh")
-// student2.name="congMinh"
-console.log(student2)
-// student3.setName= "MinhMinh"
-// console.log(student3)
-// console.log(student.sth(3))
-
+let student2 = new figure(4,"Vuong","4 canh bang nhau va 1 goc vuong")
+student2.getInfo
