@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <!-- <div id="father">
+        <p id="1" class="p">a</p>
+        <p id="abc" class="p">ab</p>
+        <p id="3" class="p">abc</p>
+        <p id="4" class="p">abcd</p>
+    </div>  
+    <ul id="menu">
+        <li>Meat</li>
+        <li>Fish</li>
+        <li>Chicken</li>
+        <li>Milk</li>
+    </ul>
+    <button id="button" onclick="click()">Count</button>
+    <script>
+        const a = document.getElementById("1")
+        const b = document.getElementsByClassName("p")
+        const c = document.getElementsByTagName("p")
+        const d = document.querySelector('#abc')
+        const e = document.querySelectorAll("p")
+        console.log("a:"+a)
+        console.log("b:"+b)
+        console.log("c:"+c)
+        console.log("d:"+d)
+        console.log("e:"+e)
+        const f = a.parentNode
+        console.log("f:"+f)
+        const g = f.childNodes
+        const h = document.getElementById("menu")
+        console.log(g)
+        console.log("h:"+h)
+        //còn có .firstchild và .lastchild
+        const click = () => {
+            alert('there are ${h.length} items in the menu')
+        }
+    </script>
+    <script>
+        //tạo elements
+
+    </script> -->
+    <script>
+        const create = document.createElement('div')
+        create.id = "detail"
+        create.innerHTML = '<p>I created a Div</p>'
+        create.innerHTML += '<ul><li>1</li><li>2</li><li>3</li></ul>'
+        document.body.appendChild(create)
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First letter</title>
+</head>
+<body>
+    <div id = 'root' ></div>
+    <!-- <form>alo</form> -->
+    <!-- <button onclick=""></button> -->
+    <input></input>
+    <button></button>
+    <script>
+        const root = document.getElementById('root')
+        const form = document.createElement('form')
+        root.appendChild(form)
+        const input = document.createElement('input')
+        input.setAttribute("placeholder","Insert a string")
+        form.appendChild(input)
+        const btn = document.createElement('button')
+        btn.textContent = "Submit"
+        btn.setAttribute("placeholder", "submit")
+        btn.setAttribute("onclick", "result()")
+        form.appendChild(btn)
+        function result(){
+            alert("day ne:"+  input.value)
+        }
+        
+    </script>
+</body>
+</html>
